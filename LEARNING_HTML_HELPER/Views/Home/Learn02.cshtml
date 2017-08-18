@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 2</title>
+</head>
+<body>
+	@{
+		Html.BeginForm();
+	}
+
+	@Html.Label(expression: "firstName", labelText: "First Name")
+	<br />
+	@Html.TextBox(name: "firstName")
+
+	<br />
+	<br />
+
+	@Html.Label("lastName", "Last Name")
+	<br />
+	@Html.TextBox(name: "lastName")
+
+	<br />
+	<br />
+
+	@Html.Label("fatherName", "Father Name")
+	<br />
+	@Html.TextBox(name: "fatherName", value: "Ali Reza", htmlAttributes: new { maxlength = 20, title = "Father Name", @class = "form-control" })
+
+	<br />
+	<br />
+
+	<button type="submit">Register</button>
+	<button type="reset">Reset</button>
+
+	@{
+		Html.EndForm();
+	}
+</body>
+
+</html>

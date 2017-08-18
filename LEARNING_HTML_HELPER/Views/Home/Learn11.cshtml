@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 11</title>
+</head>
+<body>
+	@using (Html.BeginForm())
+	{
+		<div class="field">
+			@Html.DtxLabel(expression: "firstName", labelText: "First Name")
+			<div class="controls">
+				@Html.DtxTextBox(name: "firstName")
+			</div>
+		</div>
+
+		<div class="field">
+			@Html.DtxLabel(expression: "lastName", labelText: "Last Name")
+			<div class="controls">
+				@Html.DtxTextBox(name: "lastName")
+			</div>
+		</div>
+
+		<div class="buttons">
+			@Html.DtxSubmit(name: "btnSubmit", caption: "Submit")
+			@Html.DtxReset(caption: "Reset")
+		</div>
+	}
+</body>
+</html>

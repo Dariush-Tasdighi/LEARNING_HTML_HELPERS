@@ -1,0 +1,35 @@
+﻿@using Infrastructure
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 9</title>
+</head>
+<body>
+	@using (Html.BeginForm())
+	{
+		<div class="field">
+			@Html.Raw(Html.DTLabel(expression: "firstName", labelText: "First Name"))
+			<div class="controls">
+				@Html.TextBox(name: "firstName")
+			</div>
+		</div>
+
+		<div class="field">
+
+			@Html.Raw(Html.DTLabel(expression: "lastName", labelText: "Last Name"))
+			<div class="controls">
+				@Html.TextBox(name: "lastName")
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button type="submit">Register</button>
+			<button type="reset">Reset</button>
+		</div>
+	}
+</body>
+</html>

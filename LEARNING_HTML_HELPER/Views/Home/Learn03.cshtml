@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 3</title>
+</head>
+<body>
+	@using (Html.BeginForm())
+	{
+		@Html.Label(expression: "firstName", labelText: "First Name")
+		<br />
+		@Html.TextBox(name: "firstName")
+
+		<br />
+		<br />
+
+		@Html.Label(expression: "lastName", labelText: "Last Name")
+		<br />
+		@Html.TextBox(name: "lastName")
+
+		<br />
+		<br />
+
+		<button type="submit">Register</button>
+		<button type="reset">Reset</button>
+	}
+</body>
+</html>

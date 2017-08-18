@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 5</title>
+</head>
+<body>
+	@using (Html.BeginForm())
+	{
+		<div class="field">
+			<div class="caption">
+				@Html.Label(expression: "firstName", labelText: "First Name")
+			</div>
+			<div class="controls">
+				@Html.TextBox(name: "firstName")
+			</div>
+		</div>
+
+		<div class="field">
+			<div class="caption">
+				@Html.Label(expression: "lastName", labelText: "Last Name")
+			</div>
+			<div class="controls">
+				@Html.TextBox(name: "lastName")
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button type="submit">Register</button>
+			<button type="reset">Reset</button>
+		</div>
+	}
+</body>
+</html>

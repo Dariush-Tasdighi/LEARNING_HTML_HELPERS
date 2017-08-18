@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 4</title>
+</head>
+<body>
+	@using (Html.BeginForm())
+	{
+		<div class="field">
+			<div class="caption">
+				<label for="firstName">
+					First Name
+				</label>
+			</div>
+			<div class="controls">
+				<input type="text" id="firstName" name="firstName" />
+			</div>
+		</div>
+
+		<div class="field">
+			<div class="caption">
+				<label for="lastName">
+					Last Name
+				</label>
+			</div>
+			<div class="controls">
+				<input type="text" id="lastName" name="lastName" />
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button type="submit">Register</button>
+			<button type="reset">Reset</button>
+		</div>
+	}
+</body>
+</html>
