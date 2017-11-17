@@ -21,48 +21,51 @@
 
 			// Solution (2)
 			//string strResult =
-			//	string.Format("<div class='caption'><label for='{0}'>{1}</label></div>",
-			//	expression, labelText);
+			//	$"<label for='{ expression }'>{ labelText }</label>";
 
 			//return (strResult);
 			// /Solution (2)
 
-
-
-
-
-
-
-
-
-
-
-
 			// Solution (3)
-			//System.Web.Mvc.TagBuilder oLabel =
-			//	new System.Web.Mvc.TagBuilder("label");
+			//string strResult =
+			//	string.Format("<div class='caption'><label for='{0}'>{1}</label></div>",
+			//	expression, labelText);
 
-			//oLabel.SetInnerText(labelText);
-			//oLabel.Attributes.Add("for", expression);
-
-			//return (oLabel.ToString());
+			//return (strResult);
 			// /Solution (3)
 
 			// Solution (4)
-			//System.Web.Mvc.TagBuilder oLabel =
+			//string strResult =
+			//	$"<div class='caption'><label for='{ expression }'>{ labelText }</label></div>";
+
+			//return (strResult);
+			// /Solution (4)
+
+			// Solution (5)
+			//System.Web.Mvc.TagBuilder label =
 			//	new System.Web.Mvc.TagBuilder("label");
 
-			//oLabel.SetInnerText(labelText);
-			//oLabel.Attributes.Add("for", expression);
+			//label.SetInnerText(labelText);
+			//label.Attributes.Add("for", expression);
 
-			//System.Web.Mvc.TagBuilder oDiv =
+			//return (label.ToString());
+			// /Solution (5)
+
+			// Solution (6)
+			//System.Web.Mvc.TagBuilder label =
+			//	new System.Web.Mvc.TagBuilder("label");
+
+			//label.SetInnerText(labelText);
+			//label.Attributes.Add("for", expression);
+
+			//System.Web.Mvc.TagBuilder div =
 			//	new System.Web.Mvc.TagBuilder("div");
 
-			//oDiv.AddCssClass("caption");
-			//oDiv.InnerHtml = oLabel.ToString();
+			//div.AddCssClass("caption");
+			//div.InnerHtml = label.ToString();
 
-			//return (oDiv.ToString());
-			// /Solution (4)
+			//return (div.ToString());
+			// /Solution (6)
 		}
 	}
 }
