@@ -79,7 +79,7 @@ namespace Infrastructure
 			button.SetInnerText(caption);
 
 			button.AddCssClass("btn");
-			button.AddCssClass("btn-default");
+			button.AddCssClass("btn-primary");
 
 			button.Attributes.Add("id", name);
 			button.Attributes.Add("name", name);

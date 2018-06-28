@@ -1,7 +1,4 @@
-﻿using System.Linq;
-//using System.Data.Entity;
-
-namespace LEARNING_HTML_HELPER.Controllers
+﻿namespace LEARNING_HTML_HELPER.Controllers
 {
 	public class HomeController : System.Web.Mvc.Controller
 	{
@@ -9,62 +6,74 @@ namespace LEARNING_HTML_HELPER.Controllers
 		{
 		}
 
-		public System.Web.Mvc.ActionResult Index()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Index()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn01()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn01()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn02()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn02()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn03()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn03()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn04()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn04()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn05()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn05()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn06()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn06()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn07()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn07()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn08()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn08()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn09()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn09()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn10()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn10()
 		{
 			return (View());
 		}
 
-		public System.Web.Mvc.ActionResult Learn11()
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn11()
 		{
 			return (View());
 		}
