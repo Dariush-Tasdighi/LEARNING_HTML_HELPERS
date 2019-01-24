@@ -9,73 +9,73 @@
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Index()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn01()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn02()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn03()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn04()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn05()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn06()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn07()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn08()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn09()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn10()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn11()
 		{
-			return (View());
+			return View();
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿using System.Web.Mvc.Html;
+﻿//using System.Web.Mvc.Html;
 
 namespace Infrastructure
 {
@@ -18,7 +18,7 @@ namespace Infrastructure
 			label.SetInnerText(labelText);
 			label.Attributes.Add("for", expression);
 
-			return (htmlHelper.Raw(label.ToString()));
+			return htmlHelper.Raw(label.ToString());
 			// /Solution (1)
 
 			// Solution (2)
@@ -34,7 +34,7 @@ namespace Infrastructure
 			//div.AddCssClass("caption");
 			//div.InnerHtml = label.ToString();
 
-			//return (htmlHelper.Raw(div.ToString()));
+			//return htmlHelper.Raw(div.ToString());
 			// /Solution (2)
 
 			// Solution (3)
@@ -48,7 +48,7 @@ namespace Infrastructure
 			//div.InnerHtml = label;
 			//div.AddCssClass("caption");
 
-			//return (htmlHelper.Raw(div.ToString()));
+			//return htmlHelper.Raw(div.ToString());
 			// /Solution (3)
 		}
 
@@ -67,7 +67,7 @@ namespace Infrastructure
 				input.Attributes.Add("value", value.ToString());
 			}
 
-			return (htmlHelper.Raw(input.ToString()));
+			return htmlHelper.Raw(input.ToString());
 		}
 
 		public static System.Web.IHtmlString DtxSubmit
@@ -85,7 +85,7 @@ namespace Infrastructure
 			button.Attributes.Add("name", name);
 			button.Attributes.Add("type", "submit");
 
-			return (htmlHelper.Raw(button.ToString()));
+			return htmlHelper.Raw(button.ToString());
 		}
 
 		public static System.Web.IHtmlString DtxReset
@@ -101,7 +101,7 @@ namespace Infrastructure
 
 			button.Attributes.Add("type", "reset");
 
-			return (htmlHelper.Raw(button.ToString()));
+			return htmlHelper.Raw(button.ToString());
 		}
 	}
 }

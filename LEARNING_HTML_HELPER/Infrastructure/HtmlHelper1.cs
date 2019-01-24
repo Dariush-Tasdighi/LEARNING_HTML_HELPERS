@@ -15,14 +15,14 @@
 			//string result =
 			//	$"<label for='{ expression }'>{ labelText }</label>";
 
-			//return (result);
+			//return result;
 			// /Solution (1)
 
 			// Solution (2)
 			//string result =
 			//	$"<div class='caption'><label for='{ expression }'>{ labelText }</label></div>";
 
-			//return (result);
+			//return result;
 			// /Solution (2)
 
 			// Solution (3)
@@ -32,7 +32,7 @@
 			//label.SetInnerText(labelText);
 			//label.Attributes.Add("for", expression);
 
-			//return (label.ToString());
+			//return label.ToString();
 			// /Solution (3)
 
 			// Solution (4)
@@ -48,7 +48,7 @@
 			div.AddCssClass("caption");
 			div.InnerHtml = label.ToString();
 
-			return (div.ToString());
+			return div.ToString();
 			// /Solution (4)
 		}
 	}

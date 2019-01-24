@@ -1,6 +1,4 @@
-﻿using System.Web.Mvc.Html;
-
-//namespace Googooli
+﻿//namespace Googooli
 //namespace System.Web.Mvc
 namespace Infrastructure
 {
@@ -17,7 +15,7 @@ namespace Infrastructure
 			string result =
 				$"<label for='{ expression }'>{ labelText }</label>";
 
-			return (result);
+			return result;
 		}
 	}
 }
