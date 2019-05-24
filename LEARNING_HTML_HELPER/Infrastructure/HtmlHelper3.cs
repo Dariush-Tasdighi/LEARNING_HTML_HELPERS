@@ -1,4 +1,4 @@
-﻿//using System.Web.Mvc.Html;
+﻿using System.Web.Mvc.Html;
 
 namespace Infrastructure
 {
@@ -12,16 +12,23 @@ namespace Infrastructure
 			(this System.Web.Mvc.HtmlHelper htmlHelper, string expression, string labelText)
 		{
 			// Solution (1)
-			System.Web.Mvc.TagBuilder label =
-				new System.Web.Mvc.TagBuilder("label");
+			string result =
+				$"<label for='{ expression }'>{ labelText }</label>";
 
-			label.SetInnerText(labelText);
-			label.Attributes.Add("for", expression);
-
-			return htmlHelper.Raw(label.ToString());
+			return htmlHelper.Raw(result);
 			// /Solution (1)
 
 			// Solution (2)
+			//System.Web.Mvc.TagBuilder label =
+			//	new System.Web.Mvc.TagBuilder("label");
+
+			//label.SetInnerText(labelText);
+			//label.Attributes.Add("for", expression);
+
+			//return htmlHelper.Raw(label.ToString());
+			// /Solution (2)
+
+			// Solution (3)
 			//System.Web.Mvc.TagBuilder label =
 			//	new System.Web.Mvc.TagBuilder("label");
 
@@ -35,9 +42,9 @@ namespace Infrastructure
 			//div.InnerHtml = label.ToString();
 
 			//return htmlHelper.Raw(div.ToString());
-			// /Solution (2)
+			// /Solution (3)
 
-			// Solution (3)
+			// Solution (4)
 			//string label =
 			//	htmlHelper.Label(expression: expression, labelText: labelText)
 			//	.ToHtmlString();
@@ -49,7 +56,7 @@ namespace Infrastructure
 			//div.AddCssClass("caption");
 
 			//return htmlHelper.Raw(div.ToString());
-			// /Solution (3)
+			// /Solution (4)
 		}
 
 		public static System.Web.IHtmlString DtxTextBox
@@ -71,7 +78,7 @@ namespace Infrastructure
 		}
 
 		public static System.Web.IHtmlString DtxSubmit
-			(this System.Web.Mvc.HtmlHelper htmlHelper, string name, string caption)
+			(this System.Web.Mvc.HtmlHelper htmlHelper, string caption, string id = null)
 		{
 			System.Web.Mvc.TagBuilder button =
 				new System.Web.Mvc.TagBuilder("button");
@@ -81,9 +88,12 @@ namespace Infrastructure
 			button.AddCssClass("btn");
 			button.AddCssClass("btn-primary");
 
-			button.Attributes.Add("id", name);
-			button.Attributes.Add("name", name);
 			button.Attributes.Add("type", "submit");
+
+			if (id != null)
+			{
+				button.Attributes.Add("id", id);
+			}
 
 			return htmlHelper.Raw(button.ToString());
 		}
